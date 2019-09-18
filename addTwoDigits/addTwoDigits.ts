@@ -1,5 +1,11 @@
 function addTwoDigits(n: any): number {
-
+ n = n.toString();
+ n.split('');
+ let total = 0;
+ for(let i = 0; i < n.length; i++) {
+   total += parseInt(n[i]);
+ }
+ return total;
 }
 
-// console.log(addTwoDigits(29));
+console.log(addTwoDigits(29));
